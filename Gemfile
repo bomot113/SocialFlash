@@ -13,10 +13,17 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
+  gem 'therubyracer', :platform => :ruby
   gem 'uglifier'
 end
 
+group :development do
+  gem 'rspec-rails'
+end
+
 gem 'jquery-rails'
+
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -30,4 +37,6 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec'
+  gem 'webrat'
 end
